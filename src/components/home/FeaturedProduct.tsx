@@ -14,16 +14,17 @@ export default function FeaturedProduct() {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
             viewport={{ once: true }}
-            className="relative z-10 border border-white/5 bg-brand-bg p-2 grayscale group-hover:grayscale-0 transition-all duration-1000 shadow-2xl"
+            className="relative z-10 border border-white/5 bg-brand-bg p-2 transition-all duration-1000 shadow-2xl"
           >
             <div className="aspect-square relative overflow-hidden">
                <img 
                  src={product.image} 
                  alt={product.name}
-                 className="w-full h-full object-cover grayscale opacity-80"
+                 className="w-full h-full object-cover opacity-80"
                  referrerPolicy="no-referrer"
                />
-               <div className="absolute inset-0 bg-gradient-to-tr from-brand-bg/50 to-transparent" />
+               <div className="absolute inset-0 bg-gradient-to-r from-brand-bg via-brand-bg/40 to-transparent" />
+               <div className="absolute inset-0 bg-gradient-to-t from-brand-bg via-transparent to-brand-bg/30" />
             </div>
             
             {/* Tag Overlay */}
