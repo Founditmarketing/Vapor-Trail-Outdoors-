@@ -32,17 +32,7 @@ export default function Navbar() {
     >
       <div className="h-full max-w-[1400px] mx-auto px-12 flex justify-between items-center">
         <Link to="/" className="flex items-center gap-3">
-          <div className="w-8 h-8 bg-brand-primary rounded-sm flex items-center justify-center">
-            <div className="w-4 h-4 border-2 border-brand-bg rotate-45"></div>
-          </div>
-          <div className="flex flex-col">
-            <span className="text-lg font-bold tracking-[0.2em] text-white uppercase leading-none">
-              Vapor Trail
-            </span>
-            <span className="text-[9px] tracking-[0.4em] font-mono text-white/60 uppercase mt-0.5">
-              Professional Grade
-            </span>
-          </div>
+          <img src="/vps new logo.png" alt="Vapor Trail" className="h-16 w-auto object-contain" />
         </Link>
 
         {/* Desktop Links */}

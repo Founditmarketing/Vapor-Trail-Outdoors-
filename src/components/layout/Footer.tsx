@@ -8,17 +8,7 @@ export default function Footer() {
       <div className="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-24">
         <div className="space-y-8">
           <Link to="/" className="flex items-center gap-3">
-            <div className="w-8 h-8 bg-brand-primary rounded-sm flex items-center justify-center">
-              <div className="w-4 h-4 border-2 border-brand-bg rotate-45"></div>
-            </div>
-            <div className="flex flex-col">
-              <span className="text-xl font-bold tracking-[0.2em] uppercase leading-none">
-                Vapor Trail
-              </span>
-              <span className="text-[10px] tracking-[0.4em] font-mono text-white/50 uppercase mt-1">
-                Field Logistics
-              </span>
-            </div>
+            <img src="/vps new logo.png" alt="Vapor Trail" className="h-20 w-auto object-contain" />
           </Link>
           <p className="text-white/60 text-sm leading-relaxed max-w-xs font-light">
             Providing technical advantage through superior scent dispersal and optical accuracy. 
