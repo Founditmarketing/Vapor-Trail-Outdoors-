@@ -23,6 +23,7 @@ export default function FeaturedProduct() {
                  className="w-full h-full object-cover opacity-80"
                  referrerPolicy="no-referrer"
                />
+               <div className="absolute inset-0 bg-[radial-gradient(circle,transparent_40%,rgba(0,0,0,0.8)_100%)] pointer-events-none" />
             </div>
             
             {/* Tag Overlay */}
