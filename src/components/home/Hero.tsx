@@ -12,8 +12,8 @@ export default function Hero() {
           alt="Woodsy Trail" 
           className="w-full h-full object-cover object-center opacity-80"
           initial={{ scale: 1 }}
-          animate={{ scale: 1.1 }}
-          transition={{ duration: 25, ease: "linear", repeat: Infinity, repeatType: "reverse" }}
+          animate={{ scale: 1.25 }}
+          transition={{ duration: 18, ease: "linear", repeat: Infinity, repeatType: "reverse" }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-brand-bg via-brand-bg/90 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-brand-bg via-transparent to-brand-bg/30" />
