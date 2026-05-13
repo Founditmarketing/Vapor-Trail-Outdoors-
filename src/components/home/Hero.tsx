@@ -7,10 +7,13 @@ export default function Hero() {
     <section className="relative min-h-[90vh] flex items-center bg-brand-bg overflow-hidden pt-32 md:pt-48 pb-24">
       {/* Background with woodsy trail image and gradient overlays for text legibility */}
       <div className="absolute inset-0 z-0">
-        <img 
+        <motion.img 
           src="/hero-bg.png" 
           alt="Woodsy Trail" 
           className="w-full h-full object-cover object-center opacity-80"
+          initial={{ scale: 1 }}
+          animate={{ scale: 1.1 }}
+          transition={{ duration: 25, ease: "linear", repeat: Infinity, repeatType: "reverse" }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-brand-bg via-brand-bg/90 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-brand-bg via-transparent to-brand-bg/30" />
