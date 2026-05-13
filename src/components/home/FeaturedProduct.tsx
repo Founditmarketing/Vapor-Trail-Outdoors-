@@ -23,8 +23,6 @@ export default function FeaturedProduct() {
                  className="w-full h-full object-cover opacity-80"
                  referrerPolicy="no-referrer"
                />
-               <div className="absolute inset-0 bg-gradient-to-r from-brand-bg via-brand-bg/40 to-transparent" />
-               <div className="absolute inset-0 bg-gradient-to-t from-brand-bg via-transparent to-brand-bg/30" />
             </div>
             
             {/* Tag Overlay */}
