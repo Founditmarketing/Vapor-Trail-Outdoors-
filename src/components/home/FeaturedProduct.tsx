@@ -16,11 +16,11 @@ export default function FeaturedProduct() {
             viewport={{ once: true }}
             className="relative z-10 border border-white/5 bg-brand-bg p-2 transition-all duration-1000 shadow-2xl"
           >
-            <div className="aspect-square relative overflow-hidden">
+            <div className="aspect-square relative overflow-hidden group">
                <img 
                  src={product.image} 
                  alt={product.name}
-                 className="w-full h-full object-cover opacity-80"
+                 className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-all duration-1000 ease-out"
                  referrerPolicy="no-referrer"
                />
                <div className="absolute inset-0 bg-[radial-gradient(circle,transparent_40%,rgba(0,0,0,0.8)_100%)] pointer-events-none" />

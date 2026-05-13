@@ -39,8 +39,7 @@ export default function ProductDetailPage() {
             <div className="aspect-square bg-[#0d0d0d] border border-white/10 p-2 shadow-2xl relative overflow-hidden group">
                <img 
                  src={product.image} 
-                 alt={product.name}
-                 className="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-1000"
+                 className="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000"
                  referrerPolicy="no-referrer"
                />
                <div className="absolute inset-0 bg-gradient-to-t from-brand-bg/40 to-transparent" />
@@ -48,8 +47,8 @@ export default function ProductDetailPage() {
             
             <div className="grid grid-cols-3 gap-4">
               {[...Array(3)].map((_, i) => (
-                <div key={i} className="aspect-square bg-white/10 border border-white/10 grayscale opacity-60 hover:opacity-100 transition-opacity cursor-pointer">
-                   <img src={product.image} className="w-full h-full object-cover" alt="View" />
+                <div key={i} className="aspect-square bg-white/10 border border-white/10 grayscale opacity-60 hover:opacity-100 transition-opacity cursor-pointer overflow-hidden group">
+                   <img src={product.image} className="w-full h-full object-cover group-hover:scale-105 transition-all duration-1000" alt="View" />
                 </div>
               ))}
             </div>
