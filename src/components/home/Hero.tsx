@@ -5,9 +5,15 @@ import { Link } from "react-router-dom";
 export default function Hero() {
   return (
     <section className="relative min-h-[90vh] flex items-center bg-brand-bg overflow-hidden pt-32 md:pt-48 pb-24">
-      {/* Background with subtle gradient instead of floating layers */}
+      {/* Background with woodsy trail image and gradient overlays for text legibility */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,#1a1c15_0%,#0d0d0d_100%)] opacity-40" />
+        <img 
+          src="/hero-bg.png" 
+          alt="Woodsy Trail" 
+          className="w-full h-full object-cover object-center opacity-80"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-brand-bg via-brand-bg/90 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-brand-bg via-transparent to-brand-bg/30" />
       </div>
 
       <div className="relative z-20 max-w-[1400px] mx-auto px-12 grid grid-cols-1 lg:grid-cols-2 gap-12 w-full">
