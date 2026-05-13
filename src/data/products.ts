@@ -14,7 +14,7 @@ export const products: Product[] = [
     price: "$40.00",
     category: "Scent Systems",
     description: "The Original Scent Dispersal System. Designed by owner Rex Holmes Jr., this exclusive pump-up system allows you to treat your entire body from head to toe in 15 seconds or less. Don't just spray—vaporize.",
-    image: "https://images.unsplash.com/photo-1550624559-fabb4444e21a?q=80&w=1000&auto=format&fit=crop",
+    image: "/vapor maker new.jpeg",
   },
   {
     id: "33-point-buck",
