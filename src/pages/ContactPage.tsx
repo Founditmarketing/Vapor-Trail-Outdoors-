@@ -50,10 +50,16 @@ export default function ContactPage() {
       onMouseMove={handleMouseMove}
       className="pt-52 pb-24 bg-brand-bg px-12 min-h-screen overflow-hidden relative"
     >
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 z-0 bg-cover bg-center opacity-30 mix-blend-luminosity"
+        style={{ backgroundImage: 'url("/vts 9.webp")' }}
+      />
+      
       {/* Interactive Background Grid */}
       <motion.div 
         style={{ x: moveX, y: moveY }}
-        className="absolute inset-0 opacity-[0.05] pointer-events-none"
+        className="absolute inset-0 opacity-[0.05] pointer-events-none z-0"
       >
         <div className="absolute inset-0" style={{ backgroundImage: 'linear-gradient(to right, #ffffff 1px, transparent 1px), linear-gradient(to bottom, #ffffff 1px, transparent 1px)', backgroundSize: '80px 80px' }} />
       </motion.div>

@@ -1,7 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { products } from "../data/products";
 import { motion } from "motion/react";
-import { ChevronLeft, ShoppingBag, ShieldCheck, Zap, Globe } from "lucide-react";
+import { ChevronLeft, Target, ShieldCheck, Zap, Globe } from "lucide-react";
 
 export default function ProductDetailPage() {
   const { id } = useParams();
@@ -39,16 +39,16 @@ export default function ProductDetailPage() {
             <div className="aspect-square bg-[#0d0d0d] border border-white/10 p-2 shadow-2xl relative overflow-hidden group">
                <img 
                  src={product.image} 
-                 className="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000"
+                 className="w-full h-full object-cover opacity-100 group-hover:scale-105 transition-all duration-1000"
                  referrerPolicy="no-referrer"
                />
                <div className="absolute inset-0 bg-gradient-to-t from-brand-bg/40 to-transparent" />
             </div>
             
             <div className="grid grid-cols-3 gap-4">
-              {[...Array(3)].map((_, i) => (
-                <div key={i} className="aspect-square bg-white/10 border border-white/10 grayscale opacity-60 hover:opacity-100 transition-opacity cursor-pointer overflow-hidden group">
-                   <img src={product.image} className="w-full h-full object-cover group-hover:scale-105 transition-all duration-1000" alt="View" />
+              {[product.image, ...(product.additionalImages || [])].slice(0, 3).map((imgSrc, i) => (
+                <div key={i} className="aspect-square bg-white/10 border border-white/10 opacity-80 hover:opacity-100 transition-opacity cursor-pointer overflow-hidden group">
+                   <img src={imgSrc} className="w-full h-full object-cover group-hover:scale-105 transition-all duration-1000" alt="View" />
                 </div>
               ))}
             </div>
@@ -75,7 +75,7 @@ export default function ProductDetailPage() {
               <span className="text-white/50 text-sm font-mono tracking-[0.3em] uppercase">In stock // Local Depot</span>
             </div>
 
-            <p className="text-white/70 text-lg leading-relaxed font-light">
+            <p className="text-white/70 text-lg leading-relaxed font-light whitespace-pre-wrap">
               {product.description}
             </p>
 
@@ -106,7 +106,7 @@ export default function ProductDetailPage() {
             <div className="flex flex-col sm:flex-row gap-6 pt-4">
                <button className="bg-brand-accent text-brand-bg px-14 py-6 text-[11px] uppercase tracking-[0.3em] font-bold hover:bg-[#b39373] transition-all flex items-center justify-center gap-4 group flex-1">
                  Initial Acquisition
-                 <ShoppingBag size={16} className="group-hover:scale-110 transition-transform" />
+                 <Target size={16} className="group-hover:scale-110 transition-transform" />
                </button>
                <button className="border border-white/20 text-white/80 hover:text-white px-10 py-6 text-[11px] uppercase tracking-[0.3em] font-bold transition-all hover:bg-white/5">
                  Compare

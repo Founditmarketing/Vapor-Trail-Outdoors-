@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { products } from "../../data/products";
-import { ShoppingBag, Star, Zap } from "lucide-react";
+import { Target, Star, Zap } from "lucide-react";
 
 export default function FeaturedProduct() {
   const product = products[0]; // The Vapor Maker
@@ -87,7 +87,7 @@ export default function FeaturedProduct() {
             <button className="bg-brand-primary text-white px-14 py-5 text-[11px] uppercase tracking-[0.3em] font-bold hover:bg-[#4a241d] transition-all flex items-center gap-4 group">
               Acquire Equipment
               <motion.div whileHover={{ x: 5 }} transition={{ type: "spring", stiffness: 400 }}>
-                 <ShoppingBag size={16} />
+                 <Target size={16} />
               </motion.div>
             </button>
           </div>

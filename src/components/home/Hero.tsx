@@ -36,14 +36,14 @@ export default function Hero() {
                 Disappear into the Woods // Est. 2008
               </motion.span>
               
-              <h1 className="text-7xl md:text-9xl font-light leading-[0.85] text-white font-serif tracking-tight uppercase">
-                Stop Getting <br/>
-                <span className="italic text-white/50">Busted.</span>
+              <h1 className="text-6xl md:text-8xl font-light leading-[0.85] text-white font-serif tracking-tight uppercase">
+                No. 1 Hunting Product <br/>
+                <span className="italic text-white/50">of the Century.</span>
               </h1>
             </div>
 
             <p className="text-white/70 text-base md:text-lg leading-relaxed max-w-md font-light">
-              Born from the woods in 2008, Vapor Trail Outdoors combines raw nature with cutting-edge tech to keep you undetected and ahead of the game.
+              Real gear engineered by real woodsmen. Unleash the power of the Vapor Maker system by Vapor Trail Scents and disappear into the brush.
             </p>
 
             <div className="flex flex-col sm:flex-row items-start gap-6 pt-4">

@@ -45,12 +45,12 @@ export default function AboutPage() {
              whileInView={{ opacity: 1, scale: 1 }}
              transition={{ duration: 2 }}
              viewport={{ once: true }}
-             className="aspect-[3/4] overflow-hidden grayscale border border-white/5 p-1 group"
+             className="aspect-[3/4] overflow-hidden border border-white/5 p-1 group"
            >
               <img 
-                src="https://images.unsplash.com/photo-1542385151-efd9000785a0?q=80&w=2600&auto=format&fit=crop"
+                src="/vts 2.webp"
                 className="w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000"
-                alt="Mississippi Delta Forest"
+                alt="Vapor Trail Outdoors Gear"
                 referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-brand-bg via-transparent to-transparent" />

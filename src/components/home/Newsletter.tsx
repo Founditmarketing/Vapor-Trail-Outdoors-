@@ -18,6 +18,11 @@ export default function Newsletter() {
       <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-white/10 to-transparent" />
       <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-brand-secondary/5 rounded-full blur-[100px] pointer-events-none" />
       
+      {/* Grid Background */}
+      <div className="absolute inset-0 opacity-[0.08] pointer-events-none z-0">
+        <div className="absolute inset-0" style={{ backgroundImage: 'linear-gradient(to right, #ffffff 1px, transparent 1px), linear-gradient(to bottom, #ffffff 1px, transparent 1px)', backgroundSize: '80px 80px' }} />
+      </div>
+      
       <div className="max-w-[1400px] mx-auto px-12 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <motion.div

@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import CustomCursor from "./components/ui/CustomCursor";
 import Layout from "./components/layout/Layout";
 import HomePage from "./pages/HomePage";
 import ShopPage from "./pages/ShopPage";
@@ -20,6 +21,7 @@ function ScrollToTop() {
 export default function App() {
   return (
     <Router>
+      <CustomCursor />
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>

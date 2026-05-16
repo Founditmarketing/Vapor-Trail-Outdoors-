@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { products } from "../data/products";
-import { ShoppingCart } from "lucide-react";
+import { Target } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function ShopPage() {
@@ -25,18 +25,18 @@ export default function ShopPage() {
               transition={{ duration: 0.8 }}
               className="group"
             >
-              <Link to={`/shop/${product.id}`} className="block space-y-8">
+              <Link to={`/shop/${product.id}`} className="block space-y-8 cursor-crosshair">
                 <div className="relative aspect-[4/5] bg-[#0d0d0d] overflow-hidden border border-white/5 p-1 group-hover:border-brand-accent/20 transition-all duration-700">
                   <img 
                     src={product.image} 
                     alt={product.name}
-                    className="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:scale-105 group-hover:opacity-100 transition-all duration-1000"
+                    className="w-full h-full object-cover opacity-80 group-hover:scale-105 group-hover:opacity-100 transition-all duration-1000"
                     referrerPolicy="no-referrer"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-brand-bg/80 via-transparent to-transparent opacity-60 group-hover:opacity-20 transition-all" />
                   
                   <button className="absolute bottom-8 right-8 bg-brand-accent text-brand-bg p-4 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 hover:bg-white shadow-2xl">
-                    <ShoppingCart size={20} strokeWidth={1.5} />
+                    <Target size={20} strokeWidth={1.5} />
                   </button>
                 </div>
 
